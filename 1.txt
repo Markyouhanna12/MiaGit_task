@@ -1,0 +1,10 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+ string sup_hero;
+    cout << "";
+    getline(cin,sup_hero);
+    cout << "Hello, "<<sup_hero<<"!"<<endl;
+    return 0;
+}

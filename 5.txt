@@ -1,0 +1,81 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int r_row;
+    int c_column;
+    int count_tie=0;
+    int count_justice_major=0;
+    int count_villains_major=0;
+
+    cin>>r_row;
+    cin>>c_column;
+    int justice[r_row][c_column];
+    int villains[r_row][c_column];
+
+    for(int i=0;i<r_row;i++){
+
+            for(int j=0;j<c_column;j++){
+
+                cin>>justice[i][j];}
+}
+    for(int i=0;i<r_row;i++){
+
+            for(int j=0;j<c_column;j++){
+
+                cin>>villains[i][j];}
+    }
+   for(int i=0;i<r_row;i++){
+
+            for(int j=0;j<c_column;j++){
+
+                if(justice[i][j]==villains[i][j])
+
+                    count_tie+=1;
+
+            }
+}
+
+    for(int i=0;i<r_row;i++){
+
+            for(int j=0;j<c_column;j++){
+
+                if(justice[i][j] > villains[i][j]){
+
+                   count_justice_major+=1;}}}
+
+
+    for(int i=0;i<r_row;i++){
+
+            for(int j=0;j<c_column;j++){
+
+                if(justice[i][j] < villains[i][j]){
+
+                    count_villains_major+=1;}}}
+
+
+
+
+     if (count_justice_major>count_villains_major){
+
+      cout<<"Justice League";}
+
+    else if(count_justice_major<count_villains_major){
+
+         cout<<"Villains";}
+
+    else{
+        cout<<"Tie";
+    }
+
+
+}
+
+
+
+
+
+
+
